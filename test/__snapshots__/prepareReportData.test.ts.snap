@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prepareReportData() test Returns full report with violations 1`] = `
+Array [
+  Object {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 9,
+    "wcag": "WCAG 2.0 Level AA",
+  },
+  Object {
+    "description": "Ensures every id attribute value is unique",
+    "id": "duplicate-id",
+    "impact": "minor",
+    "nodes": 1,
+    "wcag": "WCAG 2.0 Level A",
+  },
+  Object {
+    "description": "Ensures every form element has a label",
+    "id": "label",
+    "impact": "critical",
+    "nodes": 6,
+    "wcag": "WCAG 2.0 Level A",
+  },
+  Object {
+    "description": "Ensures the document has a main landmark",
+    "id": "landmark-one-main",
+    "impact": "moderate",
+    "nodes": 1,
+    "wcag": "Best practice",
+  },
+  Object {
+    "description": "Ensures all page content is contained by landmarks",
+    "id": "region",
+    "impact": "moderate",
+    "nodes": 8,
+    "wcag": "Best practice",
+  },
+  Object {
+    "description": "Ensures svg elements with an img, graphics-document or graphics-symbol role have an accessible text",
+    "id": "svg-img-alt",
+    "impact": "serious",
+    "nodes": 5,
+    "wcag": "WCAG 2.0 Level A",
+  },
+]
+`;
+
+exports[`prepareReportData() test Returns full report with violations and passes 1`] = `
+Array [
+  Object {
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 9,
+    "wcag": "WCAG 2.0 Level AA",
+  },
+  Object {
+    "description": "Ensures every id attribute value is unique",
+    "id": "duplicate-id",
+    "impact": "minor",
+    "nodes": 1,
+    "wcag": "WCAG 2.0 Level A",
+  },
+  Object {
+    "description": "Ensures every form element has a label",
+    "id": "label",
+    "impact": "critical",
+    "nodes": 6,
+    "wcag": "WCAG 2.0 Level A",
+  },
+  Object {
+    "description": "Ensures the document has a main landmark",
+    "id": "landmark-one-main",
+    "impact": "moderate",
+    "nodes": 1,
+    "wcag": "Best practice",
+  },
+  Object {
+    "description": "Ensures all page content is contained by landmarks",
+    "id": "region",
+    "impact": "moderate",
+    "nodes": 8,
+    "wcag": "Best practice",
+  },
+  Object {
+    "description": "Ensures svg elements with an img, graphics-document or graphics-symbol role have an accessible text",
+    "id": "svg-img-alt",
+    "impact": "serious",
+    "nodes": 5,
+    "wcag": "WCAG 2.0 Level A",
+  },
+]
+`;
