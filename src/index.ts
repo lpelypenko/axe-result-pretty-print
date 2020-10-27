@@ -12,9 +12,9 @@ export function prettyPrintAxeReport(report: SpecReportInput): void {
             passes: report.passes,
             url: report.url,
         });
+        console.info(preparedData.violationsTotal);
         // Print summary of violations as a table
         if (preparedData.violationsSummaryTable.length !== 0) {
-            console.info(preparedData.violationsTotal);
             if (!report.skipResultTable) {
                 console.table(preparedData.violationsSummaryTable);
             }
