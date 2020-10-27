@@ -1,6 +1,6 @@
 {
     "name": "axe-result-pretty-print",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The module allows to make readable output for aXe core accessibility results from raw aXe result object.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
