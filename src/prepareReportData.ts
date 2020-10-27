@@ -54,7 +54,7 @@ export function prepareReportData({ violations, passes, url }: SpecReportInput):
         : '';
     if (violations.length === 0) {
         return {
-            violationsTotal: `No accessibility violation were detected${
+            violationsTotal: `No accessibility violations were detected${
                 url ? ` for the ${url}` : ''
             }`,
             violationsSummaryTable: [],
