@@ -21,6 +21,12 @@ describe('printAxeReport() test', () => {
             skipResultTable: true,
         });
     });
+    it('no violations', async () => {
+        prettyPrintAxeReport({
+            violations: [],
+            url: 'www.example.com',
+        });
+    });
     it('Verify throwing an  error if violations are not passed', async () => {
         expect(() => {
             //@ts-ignore

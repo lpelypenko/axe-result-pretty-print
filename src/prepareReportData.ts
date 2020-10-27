@@ -34,6 +34,7 @@ export function getWcagReference(tags: string[]): string {
  * - detailed list of violations that could be printed as formatted text
  * @param violations
  * @param passes
+ * @param url
  */
 export function prepareReportData({ violations, passes, url }: SpecReportInput): SpecPreparedData {
     if (!violations) {
@@ -53,7 +54,9 @@ export function prepareReportData({ violations, passes, url }: SpecReportInput):
         : '';
     if (violations.length === 0) {
         return {
-            violationsTotal: 'No accessibility violation were detected',
+            violationsTotal: `No accessibility violation were detected${
+                url ? ` for the ${url}` : ''
+            }`,
             violationsSummaryTable: [],
             violationsDetailsFormatted: '',
             checksPassedSummary,
@@ -92,8 +95,9 @@ export function prepareReportData({ violations, passes, url }: SpecReportInput):
                     .join('\n')
             );
 
-            return `${i +
-                1}. ${axeRuleId}\t${learnMore}\n${name}\n${summary}\n${wcagRef}\n${nodeDetails}\n`;
+            return `${
+                i + 1
+            }. ${axeRuleId}\t${learnMore}\n${name}\n${summary}\n${wcagRef}\n${nodeDetails}\n`;
         })
         .join('\n');
 
